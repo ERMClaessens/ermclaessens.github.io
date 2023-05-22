@@ -1,10 +1,56 @@
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url('cube-background.jpg');
+    background-image: url('lake.jpg');
     background-position: bottom;
     background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    font-size: 72px;
+
+    background: -webkit-linear-gradient(#000000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    margin-bottom: -50px;
+}
+
+.line {
+    width: 300px;
+    height: 3px;
+    background:rgb(172, 41, 41);
+    margin: auto;
+    font-size: 7vmin;
+    border-radius: 5px;
+
+}
+
+.frames {
+    
+}
+
+.frame1 {
+    width:100px;
+    height: 100px;
+    display: flex;
+
+    border: 2px solid;
+    border-radius: 0px 50px 0px 50px;
+}
+
+
+
 
 .Name {
     color:rgb(255, 255, 255);
@@ -58,7 +104,7 @@ button {
     
 }
 
-img {
+.album {
     max-width: 100%;
     max-height: 100%;
     border: black solid;
