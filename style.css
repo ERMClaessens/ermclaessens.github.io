@@ -1,57 +1,129 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+/* Header */
+
 header {
     width: 100%;
     height: 100%;
     background-image: url('lake.jpg');
     background-position: bottom;
-    background-size: cover;
-    align-items:center;
+    background-size:cover;
     display: flex;
+    align-items:flex-end;
     justify-content: center;
 }
 
 .header-content {
-    margin-bottom: 150px;
+    margin-bottom: 600px;
     color: whitesmoke;
     text-align: center;
-
 }
 
 .header-content h1 {
     font-size: 7vmin;
-    font-size: 72px;
-
-    background: -webkit-linear-gradient(#000000, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-    margin-bottom: -50px;
-}
-
-.line {
-    width: 300px;
-    height: 3px;
-    background:rgb(172, 41, 41);
-    margin: auto;
-    font-size: 7vmin;
-    border-radius: 5px;
+    color:whitesmoke;
+    margin-bottom: -80px;
+    text-decoration-color: crimson;
+    text-decoration-line:line-through;
+    text-decoration-style:double;
+    text-decoration-thickness: 2px;
 
 }
 
-.frames {
-    
+
+
+/* navigation bar*/
+
+a{
+    text-decoration: none;
 }
 
-.frame1 {
-    width:100px;
-    height: 100px;
+ul{
+    list-style: none;
+}
+
+.navbar {
+    position:absolute;
+    top: 0;
+    left: 0;
     display: flex;
-
-    border: 2px solid;
-    border-radius: 0px 50px 0px 50px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
 }
 
 
+.nav-links {
+    display: flex;
+    align-items: center;
+}
 
+.nav-links li {
+    margin: 0 30px;
+}
+
+.inactive {
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.active {
+    color:crimson;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.Menu {
+    color:whitesmoke;
+    font-size: 35px;
+ }
+
+
+
+/*Album*/
+.photo-album{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    background: rgb(5, 15, 63);
+}
+.photo-album h2{
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 50px 0 5px 0;
+}
+
+.photo-album h3{
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 0 0 100px 0;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.photo-album p{
+    color: whitesmoke;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.photo-album img{
+    max-width: 60%;
+    max-height: 60%;
+    border: black solid;
+    margin-bottom: 50px;
+    margin-left:auto;
+    margin-right: auto;
+}
 
 
 
@@ -74,8 +146,8 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    color:rgb(255, 255, 255);
+.contact {
+    color:rgb(0, 0, 0);
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
@@ -100,22 +172,11 @@ button {
     padding-bottom: 50px;
 }
 
-.photos {
-    margin-left : center;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 
-.image {
-    max-width: 100%;
-    max-height: 100%;
-    border: black solid;
-    margin-bottom: 20px;
-    margin-top: 20px;
 
-}
+
+
+
 
 .return {
     background-color:darkblue; 
