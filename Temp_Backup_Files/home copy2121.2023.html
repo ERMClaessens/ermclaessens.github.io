@@ -1,0 +1,137 @@
+<!DOCTYPE htlm>
+<html lang="en"> <!--ensures usage of lastest html version + language-->
+
+<!------------------------------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--this code is used to control edge rendering mode as edge doesn't follow web standards more consistently-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ensures proper scaling on mobile devices-->
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <!-- Remix Icon-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <!--Personal sheet-->  
+    <link rel="stylesheet" href="style.css">
+
+    <title>Eleonora Claessens - Data Analyst</title>
+</head>
+
+
+<!------------------------------------------------------------------------------->
+
+    <body>
+        <header>
+            <!--Navigation Bar-->
+            <div class="navbar"> <!-- div is used as a container for a group of html elements-->
+                <!--Logo-->
+<!--edit-->                <div class="logo"><a href="#home">EC</a></div>
+
+                <!--links-->
+                <ul class="links"> <!--ul=unordered list-->
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+
+                <!--toggle-->
+                <div class="toggle_btn"> <!--In this case I'm adding a toggle button-->
+                    <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!--Dropdown Menu-->
+            <div class="dropdown_menu">
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#portfolio">Portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>   
+            </div>
+        </header>
+
+
+        <main>
+            <!--HOME-->
+            <section id="home">
+                <h1>Welcome</h1>
+                <p>
+                   I created this website to showcase my skills as a data analyst. 
+                </p>
+            </section>
+
+
+            <!--ABOUT-->
+            <section id="about">
+                <div class="main">
+                    <img src="images/profile_photo.jpg">
+                    <div class="text">
+                        <h1>About Me</h1>
+                        <h2>Data Analyst</h2>
+                        <p>Hi, I’m Eleonora Claessens, a data professional with a background in forensics and toxicology and over 3 years of hands-on experience in the biosciences industry.</p>
+                        <p>&nbsp;</p> 
+                        <p>When I’m not analysing data, I love to try new things and learn new skills. Whether it’s baking breads, building a table, brewing, growing mushrooms, building ecosystems, sewing, fixing gadgets or building my own website! </p>
+                        <p>&nbsp;</p> 
+                        <p>Throughout my career I become more and more aware of my general craving for knowledge, which is when I decided to fully move into data analysis. Now, I'm passionate about helping others streamline their data and seek answers to their questions. I do data cleaning and organization, data analysis using statistical calculations and data visualization. Currently, I use Excel or Google Sheets and expand with SQL and/or R when necessary.</p>
+                    </div>
+                </div> 
+            </section>
+
+
+            <!--PORTFOLIO-->
+            <section id="portfolio">
+                <h1>Example Projects</h1>
+                <p>
+                    Many projects I've done are confidencial, great for the company, not so great for my portfolio.<br>
+                    Therefore, here are some examples of a project can look like.
+                </p>
+            </section>
+
+
+            <!--Contact-->
+            <section id="contact">
+                <h1>Contact Me</h1>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perferendis temporibus tenetur veniam esse dignissimos consequuntur illo cum. Quo cumque quas voluptate maiores sed eius soluta ut aut eaque odio!
+                </p>
+            </section>
+        </main>
+
+        <!--copyright -->
+        <div class="footer"> 
+            <p>&copy; 2023 | 
+                <a href="https://www.linkedin.com/in/eleonora-claessens-b477b9116/" class="linkedin">
+                <i class="ri-linkedin-box-fill"></i> </a> </p>
+        </div>
+
+
+<!------------------------------------------------------------------------------->
+
+
+<!--scripts are dynamic --> 
+        <script> 
+            const toggle_button = document.querySelector('.toggle_btn')
+            const toggle_button_icon = document.querySelector('.toggle_btn i')
+            const dropdownmenu = document.querySelector('.dropdown_menu')
+        
+            toggle_button.onclick = function() {
+                dropdownmenu.classList.toggle('open')
+                const isOpen = dropdownmenu.classList.contains('open')
+
+                toggle_button_icon.classList = isOpen
+                    ?"fa-solid fa-xmark"
+                    : "fa-solid fa-bars"
+            }
+        </script>
+
+
+<!------------------------------------------------------------------------------->
+
+
+    </body>
+
+</html>
