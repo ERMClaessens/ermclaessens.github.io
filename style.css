@@ -12,7 +12,6 @@ html{
 
 body {
     height: 100vh;
-    background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
     background-size: cover;
     background-position: center;
 }
@@ -50,6 +49,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     /*make navigation bar permanent*/
     position: fixed; /* Fixed position */
@@ -57,7 +57,6 @@ header {
     left: 0; /* Stretch across the left */
     right: 0; /* Stretch across the right */
     z-index: 1000; /* Ensure it stays on top of other elements */
-
 }
 
 
@@ -151,7 +150,7 @@ section#home {
 
     /*Photo background*/
     background-color: #000;
-    background-image: url("./Images/foto3.jpg");
+    background-image: url("./Images/foto2.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -160,6 +159,24 @@ section#home h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+/*TYPING EFEFCT*/
+.typing_effect {
+    font-size: 2rem; /* Adjust as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    animation: blink-caret .75s step-end infinite;
+}
+
+/* Cursor effect */
+@keyframes blink-caret {
+    50% { border-color: transparent }
+}
+
+
+
+
 
 
 
@@ -227,6 +244,8 @@ section#portfolio {
     justify-content: center;
     text-align: center;
     color:#fff;
+    background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
+
 }
 
 section#portfolio h1 {
@@ -241,15 +260,20 @@ section#contact {
     color:#fff;
 
     height: calc(100vh);
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     align-items: center;
+    grid-gap: 6rem;
+    background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
 
-    grid-template-columns: repeat(2,2fr);
-    grid-gap: 6rem; 
-    display: flex;
 
+}
+
+
+section#contact .contact_form {
+    width: 20%;
 }
 
 section#contact h1 {
@@ -257,15 +281,13 @@ section#contact h1 {
     margin-bottom: 1rem;
 }
 
-section#contact .contact_form {
-
-}
 
 section#contact .contact_img img{
     max-width: 40%;
     width: 720px;
     height: auto;
     border-radius: 10%;
+    margin-top: 2rem;
 
 }
 

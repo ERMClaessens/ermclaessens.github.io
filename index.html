@@ -58,7 +58,7 @@
         <main>
             <!--HOME-->
             <section id="home">
-                <h1>Welcome</h1>
+                <div class="typing_effect"></div>
                 <p>
                    I created this website to showcase my skills as a data analyst. 
                 </p>
@@ -72,11 +72,11 @@
                     <div class="text">
                         <h1>About Me</h1>
                         <h2>Data Analyst</h2>
-                        <p>Hi, I’m Eleonora Claessens, a data professional with a background in forensics and toxicology and over 3 years of hands-on experience in the biosciences industry.</p>
+                        <p>Hi, I’m Eleonora Claessens, a data professional with a background in forensics and toxicology and over 3 years of hands-on experience in biosciences. </p>
                         <p>&nbsp;</p> 
-                        <p>When I’m not analysing data, I love to try new things and learn new skills. Whether it’s baking breads, building a table, brewing, growing mushrooms, building ecosystems, sewing, fixing gadgets or building my own website! </p>
+                        <p>When I’m not analysing data, I love to try new things and learn new skills. Whether it’s baking breads, building a table, brewing, growing mushrooms, building ecosystems, sewing, fixing gadgets or building my own website!</p>
                         <p>&nbsp;</p> 
-                        <p>Throughout my career I become more and more aware of my general craving for knowledge, which is when I decided to fully move into data analysis. Now, I'm passionate about helping others streamline their data and seek answers to their questions. I do data cleaning and organization, data analysis using statistical calculations and data visualization. Currently, I use Excel or Google Sheets and expand with SQL and/or R when necessary.</p>
+                        <p>Throughout my career I’ve become more and more aware of my general craving for knowledge, which is when I decided to fully move into data analysis. Now, I'm passionate about helping others streamline their data and seek answers to their questions. I do data cleaning and organization, data analysis using statistical calculations and data visualization. Currently, I use Excel or Google Sheets and expand with SQL and/or R when necessary.</p>
                     </div>
                 </div> 
             </section>
@@ -136,10 +136,31 @@
                     ?"fa-solid fa-xmark"
                     : "fa-solid fa-bars"
             }
+
+        
+            const typingElement = document.querySelector('.typing_effect');
+            const textArray = ['Welcome!'];
+            let charIndex = 0;
+
+            function type() {
+                if (charIndex < textArray[0].length) {
+                    typingElement.textContent += textArray[0].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, 200);
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                setTimeout(type, 1000);
+            });
+
+
         </script>
 
 
 <!------------------------------------------------------------------------------->
+
+
 
 
     </body>
