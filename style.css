@@ -212,6 +212,7 @@ section#about h2 {
 section#about img {
     height: auto;
     width: 420px;
+    max-width: 40%;
 }
 
 
