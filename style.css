@@ -49,6 +49,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+
     
 
     /*make navigation bar permanent*/
@@ -64,6 +66,7 @@ header {
 .logo a{
     font-size: 1.5rem;
     font-weight: bold;
+    
 }
 
 /*Center links*/
@@ -178,8 +181,6 @@ section#home h1 {
 
 
 
-
-
 /* --------------------------------------ABOUT----------------------------------------------*/
 section#about {
     height: calc(100vh);
@@ -259,7 +260,7 @@ section#portfolio h1 {
 section#contact {
     color:#fff;
 
-    height: calc(100vh);
+    height: calc(90vh);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -267,8 +268,6 @@ section#contact {
     align-items: center;
     grid-gap: 6rem;
     background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
-
-
 }
 
 
@@ -298,11 +297,12 @@ section#contact .contact_img img{
 
 /*Footer*/
 .footer {
-    padding: 20px;
+    padding: 10px;
     color:#fff;
     text-align: center;
     font-size: 1rem;
     margin: 0;
+    background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
 }
 
 .linkedin {

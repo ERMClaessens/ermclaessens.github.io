@@ -59,9 +59,6 @@
             <!--HOME-->
             <section id="home">
                 <div class="typing_effect"></div>
-                <p>
-                   I created this website to showcase my skills as a data analyst. 
-                </p>
             </section>
 
 
@@ -137,6 +134,8 @@
                     : "fa-solid fa-bars"
             }
 
+
+
         
             const typingElement = document.querySelector('.typing_effect');
             const textArray = ['Welcome!'];
@@ -152,7 +151,15 @@
 
             document.addEventListener('DOMContentLoaded', function () {
                 setTimeout(type, 1000);
+                setTimeout(stopBlinking, 8000); // Stop blinking after 8 seconds            
             });
+
+            function stopBlinking() {
+                const typingElement = document.querySelector('.typing_effect');
+                typingElement.style.animation = 'none';
+                typingElement.style.borderRight = 'none';
+}
+
 
 
         </script>
