@@ -223,7 +223,11 @@ section#about .text {
 }
 
 /*----------------------ABOUT RESPONSIVE DESIGN------------------------*/
-
+@media (max-width: 576px) {
+    section#about .main {
+        flex-direction: column;
+    }
+}
 
 
 
@@ -282,7 +286,20 @@ section#contact .contact_img img{
 
 }
 
+
+/*----------------------ABOUT RESPONSIVE DESIGN------------------------*/
+
+
+@media (max-width: 576px) {
+    section#about .main {
+        flex-direction: column;
+    }
+}
+
+
 /* ------------------------------------------------------------------------------------*/
+
+
 
 
 
