@@ -49,6 +49,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 
     
@@ -196,7 +197,6 @@ section#about .main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-  
 }
 
 section#about h1 {
@@ -281,41 +281,58 @@ section#portfolio h1 {
 section#contact {
     color:#fff;
 
-    height: calc(90vh);
+    height: calc(90vh); /*smaller screen for copyright*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /*previously row for side by side*/
     align-items: center;
     justify-content: center;
     align-items: center;
-    grid-gap: 6rem;
     background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
 }
 
+/*    background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%)*/
+
 
 section#contact .contact_form {
-    width: 20%;
+    width: 1130;
+    max-width: 95%;
+
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contact_form > * {
+    width: 100%; /* Adjust as needed */
+    margin-bottom: 1rem; /* Space between elements */
 }
 
 section#contact h1 {
     font-size: 3rem;
+    margin-bottom: 0.1rem;
+}
+
+section#contact p {
+    font-size: 1rem;
+    width: 95%;
     margin-bottom: 1rem;
+
 }
 
 
 section#contact .contact_img img{
-    max-width: 40%;
-    width: 720px;
     height: auto;
-    border-radius: 10%;
-    margin-top: 2rem;
-
+    width: 300px;
+    max-width: 40%;
+    border-radius: 20px;
+    margin-top: 1rem;
 }
 
 
 /*----------------------CONTACT RESPONSIVE DESIGN------------------------*/
 
 
-/* Contact form responsive design */
 @media (max-width: 576px) {
     section#contact {
         flex-direction: column; /* Stack elements vertically */
@@ -348,6 +365,7 @@ section#contact .contact_img img{
         font-size: 1.1rem; /* Larger font size */
     }
 }
+
 
 /* ------------------------------------------------------------------------------------*/
 
