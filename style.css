@@ -217,9 +217,9 @@ section#about img {
 
 
 section#about .text {
-    width: 550px;
+    width: 600px;
     text-align: justify;
-    padding: 3%;
+    padding: 5%;
 }
 
 /*----------------------ABOUT RESPONSIVE DESIGN------------------------*/
@@ -227,7 +227,28 @@ section#about .text {
     section#about .main {
         flex-direction: column;
     }
+
+    section#about h1, section#about h2 {
+        font-size: 2rem; /* Adjust the font size of headers */
+    }
+
+    section#about .text {
+        width: 100%; /* Use the full width for the text */
+        padding: 3%; /* Adjust padding */
+        font-size: 1rem; /* Adjust the font size of the text */
+    }
+
+    section#about img {
+        width: 100%; /* Adjust the image width to be fully responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 1rem; /* Add some space below the image */
+    }
+
+    section#about .main {
+        flex-direction: column; /* Stack the elements vertically */
+    }
 }
+
 
 
 
