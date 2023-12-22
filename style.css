@@ -228,8 +228,12 @@ section#about .text {
         flex-direction: column;
     }
 
-    section#about h1, section#about h2 {
-        font-size: 2rem; /* Adjust the font size of headers */
+    section#about h1 {
+        font-size: 2rem; 
+    }
+
+    section#about h2 {
+        font-size: 1.2rem;
     }
 
     section#about .text {
@@ -308,15 +312,42 @@ section#contact .contact_img img{
 }
 
 
-/*----------------------ABOUT RESPONSIVE DESIGN------------------------*/
+/*----------------------CONTACT RESPONSIVE DESIGN------------------------*/
 
 
+/* Contact form responsive design */
 @media (max-width: 576px) {
-    section#about .main {
-        flex-direction: column;
+    section#contact {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    section#contact .contact_form,
+    section#contact .contact_img {
+        width: 100%; /* Full width for form and image */
+        max-width: 400px; /* Maximum width */
+        margin: 0 auto; /* Center align */
+    }
+
+    section#contact .contact_form p {
+        width: 80%; /* Text width */
+        margin: 0 auto; /* Center align the text */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    section#contact form input,
+    section#contact form textarea {
+        width: 100%; /* Full width for form elements */
+        margin-bottom: 1rem; /* Space between form elements */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    section#contact form .submit_btn {
+        width: 100%; /* Full width for submit button */
+        padding: 10px; /* Larger padding */
+        font-size: 1.1rem; /* Larger font size */
     }
 }
-
 
 /* ------------------------------------------------------------------------------------*/
 
