@@ -347,6 +347,13 @@ section#contact form input {
 section#contact form .submit_btn {
     margin-bottom: 0.4rem;
     height: 5%;
+    width: 150px;
+
+}
+
+section#contact form .submit_btn:hover {
+    border: 2px solid #12640b;
+    transform: scale(1.01);
 }
 
 /*----------------------CONTACT RESPONSIVE DESIGN------------------------*/
@@ -396,11 +403,11 @@ section#contact form .submit_btn {
 
     section#contact form .submit_btn {
         width: 100%;
-        padding: 10px;
         font-size: 1.1rem;
-        height: 9%;
+        height: 8%;
     }
-}
+
+
 
 
 /* ------------------------------------------------------------------------------------*/
