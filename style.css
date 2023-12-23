@@ -282,34 +282,33 @@ section#portfolio h1 {
 
 /* --------------------------------------CONTACT----------------------------------------------*/
 section#contact {
-    color:#fff;
-
     height: calc(90vh); /*smaller screen for copyright*/
     display: flex;
-    flex-direction: column; /*previously row for side by side*/
+    /*flex-direction: row;*/
+    /*grid-gap: 1rem;*/
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem;
     background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
+    
 }
-
-/*    background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%)*/
 
 
 section#contact .contact_form {
     width: 1130;
-    max-width: 95%;
+    max-width: 50%;
+    color:#fff;
 
-    margin: 0 auto;
-    align-items: center;
+    /*align-items: center;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: column;*/
+    
+    /*padding: 1rem;*/
+    /*flex: 1;*/
 }
 
-.contact_form > * {
-    width: 100%; /* Adjust as needed */
-    margin-bottom: 1rem; /* Space between elements */
-}
+
+
 
 section#contact h1 {
     font-size: 3rem;
@@ -317,17 +316,19 @@ section#contact h1 {
 }
 
 section#contact p {
-    font-size: 1rem;
-    width: 95%;
+    width: 90%;
     margin-bottom: 1rem;
-
 }
+
+
+
+
 
 
 section#contact .contact_img img{
     height: auto;
-    width: 300px;
-    max-width: 40%;
+    width: 50%;
+    max-width: 700px;
     border-radius: 20px;
     margin-top: 1rem;
 }
@@ -342,17 +343,28 @@ section#contact .contact_img img{
         text-align: center;
     }
 
-    section#contact .contact_form,
+    section#contact .contact_form, {
+        width: 100%;
+        max-width: 400px;
+    }
+
     section#contact .contact_img {
-        width: 100%; /* Full width for form and image */
-        max-width: 400px; /* Maximum width */
-        margin: 0 auto; /* Center align */
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto; 
+        margin-top: 1rem;
+    }
+
+
+    section#contact .contact_img img{
+        border-radius: 100px;
     }
 
     section#contact .contact_form p {
-        width: 80%; /* Text width */
-        margin: 0 auto; /* Center align the text */
-        font-size: 1rem; /* Adjust font size */
+        width: 80%;
+        margin: 0 auto; 
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
 
     section#contact form input,
