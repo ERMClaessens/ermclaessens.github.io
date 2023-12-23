@@ -315,12 +315,10 @@ section#contact p {
 
 section#contact .contact_img img{
     height: auto;
-    width: 50%;
-    max-width: 700px;
+    width: 330px;
     border-radius: 50px;
     margin-top: 1rem;
 }
-
 
 
 /* Form elements */
@@ -345,7 +343,7 @@ section#contact form .submit_btn {
 /*----------------------CONTACT RESPONSIVE DESIGN------------------------*/
 
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     section#contact {
         flex-direction: column; /* Stack elements vertically */
         text-align: center;
@@ -365,6 +363,8 @@ section#contact form .submit_btn {
 
     section#contact .contact_img img{
         border-radius: 100px;
+        width: 50%;
+        max-width: 700px; 
     }
 
     section#contact .contact_form p {
