@@ -297,6 +297,7 @@ section#contact .contact_form {
     color:#fff;
     padding: 1rem;
     margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 
@@ -309,6 +310,8 @@ section#contact h1 {
 section#contact p {
     width: 90%;
     margin-bottom: 1rem;
+    /*color: #d1d4e4bf;*/
+    color: #fff;
 }
 
 
@@ -327,7 +330,13 @@ section#contact form textarea {
     margin-bottom: 0.4rem;
     display: block;
     width: 367px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    /*background: #191919;*/
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Form elements */
