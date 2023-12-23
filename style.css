@@ -346,7 +346,7 @@ section#contact form input {
 
 section#contact form .submit_btn {
     margin-bottom: 0.4rem;
-    height: 5%
+    height: 5%;
 }
 
 /*----------------------CONTACT RESPONSIVE DESIGN------------------------*/
@@ -391,13 +391,13 @@ section#contact form .submit_btn {
     }
 
     section#contact form input {
-        height: 6%;
+        height: 5%;
     }
 
     section#contact form .submit_btn {
-        width: 100%; /* Full width for submit button */
+        width: 100%;
         padding: 10px;
-        font-size: 1.1rem; /* Larger font size */
+        font-size: 1.1rem;
         height: 9%;
     }
 }
