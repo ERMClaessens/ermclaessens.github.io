@@ -286,13 +286,11 @@ section#contact {
 
     height: calc(90vh); /*smaller screen for copyright*/
     display: flex;
-    flex-direction: row; /*previously row for side by side*/
+    flex-direction: column; /*previously row for side by side*/
     align-items: center;
     justify-content: center;
     align-items: center;
-    grid-gap: 1rem;
     background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
-
 }
 
 /*    background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%)*/
