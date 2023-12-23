@@ -294,7 +294,6 @@ section#contact {
 
 section#contact .contact_form {
     width: 1130px;
-    max-width: 50%;
     color:#fff;
     padding: 1rem;
     margin-right: 2rem;
@@ -327,19 +326,20 @@ section#contact .contact_img img{
 /* Form elements */
 section#contact form input,
 section#contact form textarea {
-    width: 60%;
     margin-bottom: 0.4rem;
     display: block;
+    width: 367px;
+    font-size: 1rem;
 }
 
 /* Form elements */
 section#contact form input {
-    height: 3%;
+    height: 4%;
 }
 
 section#contact form .submit_btn {
-    width: 20%;
     margin-bottom: 0.4rem;
+    height: 5%
 }
 
 /*----------------------CONTACT RESPONSIVE DESIGN------------------------*/
