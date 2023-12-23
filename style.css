@@ -361,7 +361,7 @@ section#contact form .submit_btn:hover {
 
 @media (max-width: 800px) {
     section#contact {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column; 
         text-align: center;
     }
 
@@ -394,9 +394,9 @@ section#contact form .submit_btn:hover {
 
     section#contact form input,
     section#contact form textarea {
-        width: 100%; /* Full width for form elements */
+        width: 100%; 
         margin-bottom: 0.4rem;
-        font-size: 1rem; /* Adjust font size */
+        font-size: 1rem;
     }
 
     section#contact form input {
