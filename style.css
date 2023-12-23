@@ -288,7 +288,7 @@ section#contact {
     align-items: center;
     padding: 2rem;
     background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
-    padding: 2rem;
+    padding: 40px 15%;
 }
 
 
@@ -298,11 +298,6 @@ section#contact .contact_form {
     color:#fff;
     padding: 1rem;
     margin-right: 2rem;
-    
-    
-    
-    /*margin-left: auto;
-    margin-right: 20px;*/
 }
 
 
@@ -350,7 +345,7 @@ section#contact form .submit_btn {
 /*----------------------CONTACT RESPONSIVE DESIGN------------------------*/
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     section#contact {
         flex-direction: column; /* Stack elements vertically */
         text-align: center;
@@ -383,7 +378,7 @@ section#contact form .submit_btn {
     section#contact form input,
     section#contact form textarea {
         width: 100%; /* Full width for form elements */
-        margin-bottom: 1rem; /* Space between form elements */
+        margin-bottom: 0.4rem;
         font-size: 1rem; /* Adjust font size */
     }
 
