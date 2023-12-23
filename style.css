@@ -368,7 +368,8 @@ section#contact form .submit_btn:hover {
     section#contact .contact_form {
         width: 100%;
         max-width: 400px;
-
+        order:2;
+        margin-top: 20px;
     }
 
     section#contact .contact_img {
