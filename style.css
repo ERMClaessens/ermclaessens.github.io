@@ -284,13 +284,11 @@ section#portfolio h1 {
 section#contact {
     height: calc(90vh); /*smaller screen for copyright*/
     display: flex;
-    /*flex-direction: row;*/
-    /*grid-gap: 1rem;*/
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
     background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
-    
+    padding: 2rem;
 }
 
 
@@ -298,15 +296,14 @@ section#contact .contact_form {
     width: 1130;
     max-width: 50%;
     color:#fff;
-
-    /*align-items: center;
-    justify-content: space-around;
-    flex-direction: column;*/
+    padding: 1rem;
+    margin-right: 2rem;
     
-    /*padding: 1rem;*/
-    /*flex: 1;*/
+    
+    
+    /*margin-left: auto;
+    margin-right: 20px;*/
 }
-
 
 
 
@@ -326,19 +323,18 @@ section#contact .contact_img img{
     height: auto;
     width: 50%;
     max-width: 700px;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-top: 1rem;
 }
 
 
 
-
 /* Form elements */
 section#contact form input,
-section#contact form textarea,
-section#contact form .submit_btn {
+section#contact form textarea {
     width: 60%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
+    display: block;
 }
 
 /* Form elements */
@@ -346,10 +342,15 @@ section#contact form input {
     height: 3%;
 }
 
+section#contact form .submit_btn {
+    width: 20%;
+    margin-bottom: 0.4rem;
+}
+
 /*----------------------CONTACT RESPONSIVE DESIGN------------------------*/
 
 
-@media (max-width: 576px) {
+@media (max-width: 900px) {
     section#contact {
         flex-direction: column; /* Stack elements vertically */
         text-align: center;
@@ -384,6 +385,10 @@ section#contact form input {
         width: 100%; /* Full width for form elements */
         margin-bottom: 1rem; /* Space between form elements */
         font-size: 1rem; /* Adjust font size */
+    }
+
+    section#contact form input {
+        height: 6%;
     }
 
     section#contact form .submit_btn {
