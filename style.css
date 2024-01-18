@@ -262,7 +262,7 @@ section#about .text {
 
 /* --------------------------------------PORTFOLIO----------------------------------------------*/
 section#portfolio {
-    height: calc(100vh);
+    min-height: calc(100vh);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,6 +307,8 @@ section#portfolio .detail_container {
 
 section#portfolio .color_container {
     border: 3px solid #5310c0;
+    background: #05326318;
+
 }
 
 section#portfolio .detail_container img{
@@ -341,15 +343,13 @@ section#portfolio .detail_container:hover {
 
 
 @media (max-width: 576px) {
-    section#portfolio .container {
-        flex-direction: column; /* Stack containers vertically */
-        align-items: center; /* Center align items for better appearance */
+    section#portfolio {
+        height: auto;
+        padding: 4rem 0; 
     }
 
-    section#portfolio .color_container, 
-    section#portfolio .detail_container {
-        width: 90%; /* Full width for smaller screens */
-        margin: 10px auto; /* Adjust margin for vertical stacking */
+    section#portfolio .container {
+        flex-direction: column; 
     }
 }
 
