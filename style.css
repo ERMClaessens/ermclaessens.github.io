@@ -298,7 +298,7 @@ section#portfolio .container {
 
 section#portfolio .color_container, 
 section#portfolio .detail_container {
-    height: 25rem;
+    height: 20rem;
     width: 21rem;
     margin: 0 auto;
     justify-content: space-around;
