@@ -324,7 +324,9 @@ section#portfolio .detail_container p {
     font-weight: bold;
 }
 
-
+section#portfolio .project_temp p {
+    color: #fff;   
+}
 
 
 /*--------------hover------------*/
