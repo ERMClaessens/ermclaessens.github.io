@@ -284,20 +284,21 @@ section#portfolio h1 {
     margin-bottom: 2rem;
 }
 
-section#portfolio .container {
+section#portfolio .container { 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; /*for smaller screens*/
     margin: 0 auto;
+    gap: 4rem;
 }
 
 /* Size of each container - Adjust as needed to fit side by side */
 section#portfolio .color_container, 
 section#portfolio .detail_container {
-    height: 23rem;
-    width: 24rem;
+    height: 20rem;
+    width: 21rem;
     margin: 0 auto;
     justify-content: space-around;
     overflow: hidden;
@@ -342,12 +343,13 @@ section#portfolio .detail_container:hover {
 @media (max-width: 576px) {
     section#portfolio .container {
         flex-direction: column; /* Stack containers vertically */
+        align-items: center; /* Center align items for better appearance */
     }
 
     section#portfolio .color_container, 
     section#portfolio .detail_container {
-        width: 100%; /* Full width for smaller screens */
-        margin: 10px 0; /* Adjust margin for vertical stacking */
+        width: 90%; /* Full width for smaller screens */
+        margin: 10px auto; /* Adjust margin for vertical stacking */
     }
 }
 
