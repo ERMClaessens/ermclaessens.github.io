@@ -499,12 +499,12 @@ footer {
     padding: 10px;
     color:#fff;
     text-align: center;
-    font-size: 1rem;
+    font-size: 18px;
     margin: 0;
     background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
 }
 
 footer .linkedin {
     vertical-align: middle;
-    font-size: 1 rem;
+    font-size: 18px;
 }
