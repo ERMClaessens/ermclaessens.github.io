@@ -277,6 +277,7 @@ section#portfolio p {
     text-align: center;
     color:#fff;
     margin-bottom: 4rem;
+    max-width: 95%;
 }
 
 section#portfolio h1 {
@@ -356,7 +357,7 @@ section#portfolio .detail_container:hover {
 
 /* --------------------------------------CONTACT----------------------------------------------*/
 section#contact {
-    height: calc(90vh); /*smaller screen for copyright*/
+    min-height: calc(96vh); /*smaller screen for copyright*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,6 +435,8 @@ section#contact form .submit_btn:hover {
     section#contact {
         flex-direction: column; 
         text-align: center;
+        height: auto;
+        padding: 4rem 0; 
     }
 
     section#contact .contact_form {
