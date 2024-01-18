@@ -20,6 +20,11 @@ p {
     font-size: 20px;
 }
 
+@media (max-width: 800px) {
+    p{
+        font-size: 1rem;
+    }
+}
 /* ------------------------------------------------------------------------------------*/
 /*HEADER*/
 
@@ -121,7 +126,7 @@ header {
 /*responsive navagation bar . */
 
 
-@media (max-width: 792px) {
+@media (max-width: 800px) {
     .navbar .links {
         display: none;
     }
