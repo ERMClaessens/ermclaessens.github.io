@@ -297,7 +297,7 @@ section#portfolio .container {
 /* Size of each container - Adjust as needed to fit side by side */
 section#portfolio .color_container, 
 section#portfolio .detail_container {
-    height: 20rem;
+    height: 25rem;
     width: 21rem;
     margin: 0 auto;
     justify-content: space-around;
