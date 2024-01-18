@@ -269,7 +269,7 @@ section#portfolio {
     align-items: center;
     justify-content: center;
     text-align: center;    
-    background: linear-gradient(to bottom, #3169a8 0%, #2c5c94 100%);
+    background: linear-gradient(to bottom, #06080e 0%, #12182b 100%);
 }
 
 section#portfolio h1,
@@ -277,12 +277,13 @@ section#portfolio p {
     text-align: center;
     color:#fff;
     margin-bottom: 4rem;
-    max-width: 95%;
+    max-width: 80%;
 }
 
 section#portfolio h1 {
     font-size: 3rem;
     margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgb(73, 73, 77);
 }
 
 section#portfolio .container { 
@@ -320,10 +321,13 @@ section#portfolio .detail_container img{
 section#portfolio .detail_container p {
     font-size: 1.5rem;
     margin-top:1rem;
-    color:#ffffff;
+    color:#000000;
     font-weight: bold;
 }
 
+section#portfolio .project_temp p {
+    color: #fff;
+}
 
 /*--------------hover------------*/
 
