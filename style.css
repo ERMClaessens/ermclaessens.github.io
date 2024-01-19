@@ -16,15 +16,7 @@ body {
     background-position: center;
 }
 
-p {
-    font-size: 20px;
-}
 
-@media (max-width: 800px) {
-    p{
-        font-size: 1rem;
-    }
-}
 /* ------------------------------------------------------------------------------------*/
 /*HEADER*/
 
@@ -177,6 +169,7 @@ section#home {
     overflow: hidden;
     border-right: 2px solid;
     animation: blink-caret .75s step-end infinite;
+    text-shadow: 2px 2px 5px rgb(29, 28, 28);
 }
 
 /* Cursor effect */
@@ -214,7 +207,6 @@ section#about h1 {
     font-size: 3rem;
     margin-bottom: 0rem;
     text-shadow: 2px 2px 5px rgb(196, 196, 207);
-
 }
 
 section#about h2 {
@@ -380,7 +372,7 @@ section#portfolio .detail_container:hover {
 
 /* --------------------------------------CONTACT----------------------------------------------*/
 section#contact {
-    min-height: calc(96vh); /*smaller screen for copyright*/
+    min-height: calc(93vh); /*smaller screen for copyright*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,13 +391,13 @@ section#contact .contact_form {
 
 section#contact h1 {
     font-size: 3rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 2rem;
     text-shadow: 2px 2px 5px rgb(73, 73, 77);
 }
 
 section#contact p {
     width: 90%;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     color: #fff;
 }
 
@@ -510,7 +502,6 @@ footer {
     padding: 10px;
     color:#fff;
     text-align: center;
-    font-size: 18px;
     margin: 0;
     background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
 }
