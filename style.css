@@ -438,6 +438,24 @@ section#contact form .submit_btn:hover {
     transform: scale(1.01);
 }
 
+
+/*TEMPORARY SECTION FOR UNDER CONSTRUCTION*/
+
+section#contact .header {
+    position: relative;
+
+.overlay-text {
+    position: absolute;
+
+    transform: rotate(-10deg);
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px red;
+    font-size: 6rem;
+    
+    white-space: nowrap; /* Prevent text wrapping */
+    user-select: none; /* Prevent text selection */
+}
+
 /*----------------------CONTACT RESPONSIVE DESIGN------------------------*/
 
 @media (max-width: 800px) {
