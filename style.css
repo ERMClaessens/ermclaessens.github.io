@@ -270,13 +270,12 @@ section#portfolio {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;    
+    text-align: center;
     background: linear-gradient(to bottom, #06080e 0%, #12182b 100%);
 }
 
 section#portfolio h1,
 section#portfolio p {
-    text-align: center;
     color:#fff;
     margin-bottom: 4rem;
     max-width: 80%;
@@ -323,8 +322,9 @@ section#portfolio .detail_container img{
 section#portfolio .detail_container p {
     font-size: 1.5rem;
     margin-top:1rem;
-    color:#000000;
+    color:#ffffff;
     font-weight: bold;
+    max-width: 100%;
 }
 
 section#portfolio .project_temp p {
@@ -339,6 +339,7 @@ section#portfolio .detail_container:hover {
     transition: transform 0.2s ease-in-out;
     opacity: 0.9; 
 }
+
 
 
 /*----------------------PORFOLIO RESPONSIVE DESIGN------------------------*/
@@ -365,8 +366,11 @@ section#portfolio .detail_container:hover {
         margin: 0;
     }
 
-}
+    section#portfolio .project p {
+        color:#000000;
+    }
 
+}
 
 
 
