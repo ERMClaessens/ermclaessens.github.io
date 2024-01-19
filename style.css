@@ -445,16 +445,16 @@ section#contact form .submit_btn:hover {
 
 /*TEMPORARY SECTION FOR UNDER CONSTRUCTION*/
 
-section#contact .header {
-    position: relative;
+/*section#contact .header {
+    position: relative;*/
 
-.overlay-text {
+section#contact .overlay-text {
     position: absolute;
 
     transform: rotate(-10deg);
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 4px red;
-    font-size: 6rem;
+    font-size: 4rem;
     
     white-space: nowrap; /* Prevent text wrapping */
     user-select: none; /* Prevent text selection */
@@ -514,6 +514,22 @@ section#contact .header {
         height: 8%;
     }
 
+    /*temporary!!!!! UNDER CONSTRUCTION*/
+    section#contact .overlay-text {
+        font-size: 3rem;
+    }
+}
+
+    /*temporary!!!!! UNDER CONSTRUCTION*/
+@media (max-width: 448px) {
+    section#contact .overlay-text {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 284px) {
+    section#contact .overlay-text {
+        font-size: 1rem;
+    }
 }
 /* ------------------------------------------------------------------------------------*/
 
